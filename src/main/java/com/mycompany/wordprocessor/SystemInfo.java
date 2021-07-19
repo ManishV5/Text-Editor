@@ -1,4 +1,4 @@
-package com.mycompany.wordprocessor;
+package com.mycompany.texteditor;
 
 public class SystemInfo {
 

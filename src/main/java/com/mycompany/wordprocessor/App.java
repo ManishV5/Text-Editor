@@ -52,7 +52,7 @@ public class App extends Application {
 
         Scene scene = new Scene(layout);
         window.setScene(scene);
-        window.setTitle("Word Processor");
+        window.setTitle("Text Editor");
         window.show();
     }
 
