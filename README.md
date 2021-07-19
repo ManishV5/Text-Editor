@@ -1,4 +1,4 @@
-# Word Processor
+# Text Editor
 
 A simple text editor that tells you the longest word you wrote.
 
