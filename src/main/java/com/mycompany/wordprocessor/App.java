@@ -18,7 +18,6 @@ public class App extends Application {
 
     @Override
     public void start(Stage window) {
-        //Main layout created with one HBox and three labels
         BorderPane layout = new BorderPane();
         HBox bottomBox = new HBox();
         bottomBox.setSpacing(10);
@@ -31,7 +30,6 @@ public class App extends Application {
 
         TextArea textField = new TextArea("");
 
-        //TextField on typing, takes the changed value, sorts and finds longest word 
         textField.textProperty().addListener((ObservableValue<? extends String> change, String oldValue, String newValue) -> {
             int characterCount = newValue.length();
             String[] parts = newValue.split(" ");
@@ -41,7 +39,6 @@ public class App extends Application {
                     .findFirst()
                     .get();
 
-            //All 3 labels are updated by variables created in eventlistener
             lettersLabel.setText("Letters: " + characterCount);
             wordLabel.setText("Words: " + words);
             longestWordLabel.setText("The longest word is: " + longest);
